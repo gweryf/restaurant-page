@@ -10,14 +10,14 @@ function addDescr() {
 
     const descrimg = document.createElement('img')
     descrimg.classList.add('homeimg')
-    descrimg.src = "../dist/descrfood.jpg"
+    descrimg.src = "../dist/images/descrfood.jpg"
     descrimg.alt = "Image of a food!"
     descr.appendChild(descrimg)
 
     const order = document.createElement('div')
     order.innerText = "Order online or visit us!"
     order.style.textAlign = 'center'
-    order.style.background = '#404040'
+    order.style.background = 'rgba(244, 148, 69, 0)'
     descr.appendChild(order)
 
     return descr
