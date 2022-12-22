@@ -6,9 +6,20 @@ function addDescr() {
 
     As you enter our food court through the decorated, metal door, you're welcomed by overall happiness and the smile of a waitress.
     The bartender is swamped in work, but still manages to welcome you with a smile.
-    
-    You did hear rumors about this tavern, supposedly it's famous for something, but you can't remember what for. Though judging by the music and how many people are dancing, it must be the live band who just started playing. You manage to find a seat and prepare for what will undoubtedbly be a great evening.
     `
+
+    const descrimg = document.createElement('img')
+    descrimg.classList.add('homeimg')
+    descrimg.src = "../dist/descrfood.jpg"
+    descrimg.alt = "Image of a food!"
+    descr.appendChild(descrimg)
+
+    const order = document.createElement('div')
+    order.innerText = "Order online or visit us!"
+    order.style.textAlign = 'center'
+    order.style.background = '#404040'
+    descr.appendChild(order)
+
     return descr
 }
 

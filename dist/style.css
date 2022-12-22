@@ -42,6 +42,16 @@ button {
     border-radius: 10px;
 }
 
+.homeimg {
+    width: 400px;
+    border-radius: 50%;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
 footer {
     text-align: center;
 }
