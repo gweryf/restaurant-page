@@ -15,7 +15,7 @@ function addMenu() {
     ))
 
     actualmenu.appendChild(addMenuItems(
-        "pandemain",
+        "pandemainz",
         200,
         "a high quality bread made from wheat with the flour sifted 2 or 3 times"
     ))
@@ -31,19 +31,23 @@ function addMenu() {
 
 function addMenuItems(name,price,description) {
     const menufood = document.createElement('div')
+    menufood.classList.add('menuorg')
 
     const foodname = document.createElement('h2')
     foodname.classList.add('foodname')
+    foodname.innerText = `${name}`
 
     const foodprice = document.createElement('div')
     foodprice.classList.add('foodprice')
+    foodprice.innerText = `${price}`
 
     const fooddescrp = document.createElement('div')
     fooddescrp.classList.add('fooddescrp')
+    fooddescrp.innerText = `${description}`
 
     const foodimg = document.createElement('img')
     foodimg.classList.add('foodimg')
-    foodimg.src = `../dist/images/menu/${name}.jpg`
+    foodimg.src = `../dist/images/menu/${name}.png`
 
     menufood.appendChild(foodimg)
     menufood.appendChild(foodname)
@@ -54,5 +58,9 @@ function addMenuItems(name,price,description) {
 }
 
 function renderMenu() {
-    
+    const menus = document.querySelector('.descr')
+    menus.textContent = "";
+    menus.appendChild(addMenu())
 }
+
+export default renderMenu

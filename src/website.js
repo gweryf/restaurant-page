@@ -1,4 +1,5 @@
 import addDescr from "./home"
+import renderMenu from "./menu"
 
 function addNav() {
     const navbar = document.createElement('nav')
@@ -15,6 +16,9 @@ function addNav() {
     home.innerText = 'Home'
     const menu = document.createElement('button')
     menu.innerText = 'Menu'
+    menu.addEventListener('click',()=>{
+        renderMenu()
+    })
     const about = document.createElement('button')
     about.innerText = 'About'
 
@@ -36,9 +40,10 @@ function addFooter() {
 function renderPage() {
     const divele = document.getElementById('content')
     const body = document.querySelector('body')
-    body.appendChild(addDescr())
+    // body.appendChild(addDescr())
     divele.appendChild(addNav())
-    body.append(addFooter())
+    divele.appendChild(addDescr())
+    divele.appendChild(addFooter())
 }
 
 export default renderPage
