@@ -2,12 +2,11 @@
 
 *{
     font-family: 'Unbounded', cursive;
-    background: #242424;
     margin: 0;
     color: white;
 }
 
-body{
+#content {
     background-image: url('../dist/images/tavern.jpg');
     background-size: 100% 120%;
     background-repeat: no-repeat;
@@ -21,7 +20,7 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: rgba(244, 148, 69, 0.2);
+    background-color: rgba(244, 148, 69, 0.5);
     padding: 20px;
 }
 
@@ -58,9 +57,31 @@ button {
     margin-bottom: 20px;
 }
 
-footer {
+.actualmenu {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.menuorg {
+    width: 350px;
+    transition-duration: 0.2s;
+}
+.menuorg:hover {
+    transform: scale(1.1);
     background-color: rgba(244, 148, 69, 0.2);
+    transition-duration: 0.2s;
+}
+
+.foodimg {
+    width: 300px;
+}
+
+footer {
+    background-color: rgba(244, 148, 69, 0.5);
     text-align: center;
     justify-content: center;
     align-items: center;
+    margin-bottom: 0;
 }
