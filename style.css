@@ -2,16 +2,22 @@
 
 *{
     font-family: 'Unbounded', cursive;
-    margin: 0;
     color: white;
+}
+html,body {
+  margin: 0;
+  padding: 0;
+  height: 100%; 
 }
 
 #content {
+    position: relative;
     background-image: url('../dist/images/tavern.jpg');
     background-size: 100% 120%;
     background-repeat: no-repeat;
+    height: auto !important; 
+    min-height:100%;
 }
-
 .logo{
     background-color: rgba(244, 148, 69, 0);
 }
@@ -86,9 +92,11 @@ button {
 }
 
 footer {
+    position: absolute;
     background-color: rgba(244, 148, 69, 0.5);
     text-align: center;
     justify-content: center;
     align-items: center;
-    margin-bottom: 0;
+    width: 100%;
+    bottom: 0;
 }
