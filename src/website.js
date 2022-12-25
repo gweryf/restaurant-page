@@ -1,5 +1,6 @@
 import addDescr from "./home"
 import renderMenu from "./menu"
+import renderAbout from "./about"
 
 function addNav() {
     const navbar = document.createElement('nav')
@@ -25,6 +26,9 @@ function addNav() {
     })
     const about = document.createElement('button')
     about.innerText = 'About'
+    about.addEventListener('click',()=>{
+        renderAbout()
+    })
 
     navbar.appendChild(resrtname)
     options.appendChild(home)
