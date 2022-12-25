@@ -14,6 +14,10 @@ function addNav() {
 
     const home = document.createElement('button')
     home.innerText = 'Home'
+    home.addEventListener('click',()=>{
+        renderPage()
+    })
+
     const menu = document.createElement('button')
     menu.innerText = 'Menu'
     menu.addEventListener('click',()=>{
@@ -39,6 +43,7 @@ function addFooter() {
 
 function renderPage() {
     const divele = document.getElementById('content')
+    divele.textContent = ""
     const body = document.querySelector('body')
     // body.appendChild(addDescr())
     divele.appendChild(addNav())
