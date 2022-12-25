@@ -78,6 +78,13 @@ button {
     width: 300px;
 }
 
+.mainAbout {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
 footer {
     background-color: rgba(244, 148, 69, 0.5);
     text-align: center;
