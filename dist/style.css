@@ -36,6 +36,27 @@ html,body {
     gap: 20px;
 }
 
+iframe {
+    width: 700px;
+    height: 400px;
+}
+
+.phonelogo {
+    width: 25px;
+}
+
+.addrlogo {
+    width: 100px;
+}
+
+.phone {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
 button {
     background: none;
     border: none;

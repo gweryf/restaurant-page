@@ -7,7 +7,7 @@ function addNav() {
     navbar.classList.add('navbar')
     
     const resrtname = document.createElement('div')
-    resrtname.innerText = 'Food Court'
+    resrtname.innerText = 'Tavern'
     resrtname.classList.add('logo')
 
     const options = document.createElement('div')
