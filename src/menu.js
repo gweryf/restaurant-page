@@ -47,7 +47,7 @@ function addMenuItems(name,price,description) {
 
     const foodimg = document.createElement('img')
     foodimg.classList.add('foodimg')
-    foodimg.src = `../dist/images/menu/${name}.png`
+    foodimg.src = `images/menu/${name}.png`
 
     menufood.appendChild(foodimg)
     menufood.appendChild(foodname)

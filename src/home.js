@@ -10,7 +10,7 @@ function addDescr() {
 
     const descrimg = document.createElement('img')
     descrimg.classList.add('homeimg')
-    descrimg.src = "../dist/images/descrfood.jpg"
+    descrimg.src = "images/descrfood.jpg"
     descrimg.alt = "Image of a food!"
     descr.appendChild(descrimg)
 

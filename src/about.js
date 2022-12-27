@@ -5,7 +5,7 @@ function addAbout() {
     const phone = document.createElement('div')
     phone.classList.add('phone')
     const phonelogo = document.createElement('img')
-    phonelogo.src = '../dist/images/phone.png'
+    phonelogo.src = 'images/phone.png'
     phonelogo.classList.add('phonelogo')
     const phonenum = document.createElement('p')
     phonenum.textContent = '+91 79797 87022'
@@ -18,7 +18,7 @@ function addAbout() {
     physicaladdr.textContent = `7960 Niwot Rd Unit D12, Niwot, CO 80503, United States`
 
     const addrlogo = document.createElement('img')
-    addrlogo.src = '../dist/images/address.png'
+    addrlogo.src = 'images/address.png'
     addrlogo.classList.add('addrlogo')
 
 
