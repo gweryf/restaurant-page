@@ -12,7 +12,7 @@ html,body {
 
 #content {
     position: relative;
-    background-image: url('../dist/images/tavern.jpg');
+    background-image: url('images/tavern.jpg');
     background-size: 100% 120%;
     background-repeat: no-repeat;
     height: auto !important; 
